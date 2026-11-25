@@ -98,10 +98,14 @@ p { margin: 0; }
 
 /* Equipe */
 .team { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-.pro { padding: 30px 26px; border-radius: var(--r); background: var(--cream-2); border: 1px solid var(--line); }
-.pro-ic { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--wine); color: var(--cream); font-size: 22px; margin-bottom: 20px; }
+.pro { border-radius: var(--r); background: var(--cream-2); border: 1px solid var(--line); overflow: hidden; display: flex; flex-direction: column; }
+.pro-foto { margin: 0; aspect-ratio: 4 / 5; max-width: 100%; background: var(--wine); }
+.pro-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pro-vazio { display: grid; place-items: center; background: linear-gradient(160deg, var(--wine), var(--wine-ink)); color: var(--cream); font-size: 44px; }
+.pro-txt { padding: 22px 24px 26px; }
 .pro h3 { font-size: 23px; color: var(--wine-ink); margin-bottom: 8px; }
 .pro p { color: var(--muted); font-size: 15.5px; }
+.pro-ig { display: inline-block; margin-top: 10px; color: var(--wine); font-weight: 600; font-size: 14.5px; text-underline-offset: 4px; word-break: break-all; }
 
 /* Passos */
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -156,12 +160,6 @@ p { margin: 0; }
   html { scroll-behavior: auto; }
   .js .reveal { opacity: 1; transform: none; transition: none; }
 }
-
-/* Fotos dos serviços */
-.cat { overflow: hidden; padding-top: 0; }
-.cat-img { margin: 0 -28px 22px; aspect-ratio: 16 / 10; overflow: hidden; }
-.cat-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
-.cat:hover .cat-img img { transform: scale(1.04); }
 
 /* Galeria em mosaico */
 .gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; grid-auto-flow: dense; gap: 14px; }

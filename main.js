@@ -1,7 +1,15 @@
 // Dados de contato: altere aqui se mudar o número
 const CONFIG = {
   whatsapp: "5571987239091",
+  agenda: "https://script.google.com/macros/s/AKfycbzXQR-TGnd9prymWKu1g-OXDPPyQTTMMiQnNBg0D84uoukDaBFH7lNEFIks2PrnjYdN/exec",
 };
+
+// Botões com data-agenda abrem o sistema de agendamento online
+document.querySelectorAll("[data-agenda]").forEach((el) => {
+  el.href = CONFIG.agenda;
+  el.target = "_blank";
+  el.rel = "noopener";
+});
 
 const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

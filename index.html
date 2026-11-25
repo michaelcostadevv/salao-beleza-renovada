@@ -31,7 +31,7 @@
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
-      <a class="btn btn-sm" data-wa="Olá! Vim pelo site e gostaria de agendar um horário." href="#contato">Agendar</a>
+      <a class="btn btn-sm" data-agenda href="#contato">Agendar</a>
     </div>
   </header>
 
@@ -43,7 +43,7 @@
         <h1>Salão<br /><em>Beleza Renovada</em></h1>
         <p class="hero-sub">Cabelo, unhas, sobrancelha e maquiagem num só lugar, com hora marcada e atendimento de quem cuida de você pelo nome.</p>
         <div class="actions">
-          <a class="btn btn-light" data-wa="Olá! Vim pelo site e gostaria de agendar um horário." href="#contato">Agendar pelo WhatsApp</a>
+          <a class="btn btn-light" data-agenda href="#contato">Agendar online</a>
           <a class="link-light" href="#servicos">Ver serviços</a>
         </div>
       </div>
@@ -54,7 +54,7 @@
       <div class="wrap strip-in">
         <div><strong>Terça a sábado</strong><span>das 9h às 18h</span></div>
         <div><strong>Ao lado do Shopping Master</strong><span>Cond. Vila dos Sapotizeiros, Cabula</span></div>
-        <div><strong>Agendamento</strong><span>rápido pelo WhatsApp</span></div>
+        <div><strong>Agendamento</strong><span>online ou pelo WhatsApp</span></div>
       </div>
     </section>
 
@@ -69,7 +69,6 @@
 
         <div class="cats">
           <article class="cat reveal">
-            <figure class="cat-img"><img src="img/instagram/morena-iluminada-2.jpg" alt="Cliente com mechas iluminadas feitas no salão" loading="lazy" style="object-position:center 35%" /></figure>
             <div class="cat-top">
               <span class="cat-n">01</span>
               <h3>Cabelo</h3>
@@ -85,7 +84,6 @@
           </article>
 
           <article class="cat reveal">
-            <figure class="cat-img ilus"><img src="img/ilustrativas/svc-maquiagem.jpg" alt="Maquiagem nos olhos" loading="lazy" /></figure>
             <div class="cat-top">
               <span class="cat-n">02</span>
               <h3>Penteado e maquiagem</h3>
@@ -98,7 +96,6 @@
           </article>
 
           <article class="cat reveal">
-            <figure class="cat-img ilus"><img src="img/ilustrativas/svc-unhas.jpg" alt="Unhas esmaltadas em tom rosado" loading="lazy" /></figure>
             <div class="cat-top">
               <span class="cat-n">03</span>
               <h3>Unhas</h3>
@@ -111,7 +108,6 @@
           </article>
 
           <article class="cat reveal">
-            <figure class="cat-img ilus"><img src="img/ilustrativas/svc-sobrancelha.jpg" alt="Design de sobrancelha" loading="lazy" /></figure>
             <div class="cat-top">
               <span class="cat-n">04</span>
               <h3>Sobrancelha</h3>
@@ -123,7 +119,6 @@
           </article>
 
           <article class="cat reveal">
-            <figure class="cat-img ilus"><img src="img/ilustrativas/svc-depilacao.jpg" alt="Depilação com cera" loading="lazy" /></figure>
             <div class="cat-top">
               <span class="cat-n">05</span>
               <h3>Depilação</h3>
@@ -134,13 +129,15 @@
           </article>
 
           <article class="cat reveal">
-            <figure class="cat-img ilus"><img src="img/ilustrativas/svc-estetica.jpg" alt="Tratamento estético facial" loading="lazy" /></figure>
             <div class="cat-top">
               <span class="cat-n">06</span>
               <h3>Estética</h3>
             </div>
             <ul class="svc">
-              <li><a data-wa="Olá! Gostaria de saber quais procedimentos de estética vocês fazem e os valores." href="#contato">Procedimentos estéticos</a></li>
+              <li><a data-wa="Olá! Gostaria de saber o valor e horários para criolipólise de placas." href="#contato">Criolipólise de placas</a></li>
+              <li><a data-wa="Olá! Gostaria de saber o valor e horários para acupuntura auricular." href="#contato">Acupuntura auricular</a></li>
+              <li><a data-wa="Olá! Gostaria de saber o valor e horários para ventosaterapia." href="#contato">Ventosaterapia</a></li>
+              <li><a data-wa="Olá! Gostaria de saber quais outros procedimentos de estética vocês fazem e os valores." href="#contato">Outros procedimentos</a></li>
             </ul>
           </article>
         </div>
@@ -206,10 +203,10 @@
           <p class="lead">Sob o comando de Aida Ribeiro, cada área tem sua especialista. Você agenda tudo em um só lugar.</p>
         </div>
         <div class="team">
-          <div class="pro reveal"><span class="pro-ic" aria-hidden="true">✂</span><h3>Cabeleireira</h3><p>Cortes, escova, mechas, progressiva, tratamentos e penteados.</p></div>
-          <div class="pro reveal"><span class="pro-ic" aria-hidden="true">◆</span><h3>Manicure</h3><p>Manicure, pedicure e cuidados com as unhas das mãos e dos pés.</p></div>
-          <div class="pro reveal"><span class="pro-ic" aria-hidden="true">❖</span><h3>Depiladora</h3><p>Depilação com cuidado e higiene em todas as etapas.</p></div>
-          <div class="pro reveal"><span class="pro-ic" aria-hidden="true">✦</span><h3>Esteticista</h3><p>Sobrancelha, henna, maquiagem e procedimentos de estética.</p></div>
+          <div class="pro reveal"><div class="pro-foto pro-vazio" aria-hidden="true"><span>✂</span></div><div class="pro-txt"><h3>Cabeleireira</h3><p>Cortes, escova, mechas, progressiva, tratamentos e penteados.</p></div></div>
+          <div class="pro reveal"><figure class="pro-foto"><img src="img/equipe/manicure-sobrancelha.jpg" alt="Profissional do salão fazendo design de sobrancelha com henna em uma cliente" width="720" height="960" loading="lazy" style="object-position: 30% 40%" /></figure><div class="pro-txt"><h3>Manicure e sobrancelha</h3><p>Manicure, pedicure, design de sobrancelha e henna.</p></div></div>
+          <div class="pro reveal"><div class="pro-foto pro-vazio" aria-hidden="true"><span>❖</span></div><div class="pro-txt"><h3>Depiladora</h3><p>Depilação com cuidado e higiene em todas as etapas.</p></div></div>
+          <div class="pro reveal"><figure class="pro-foto"><img src="img/equipe/esteticista.jpg" alt="Nice Santos, esteticista do salão, aplicando eletrodos em um tratamento corporal" width="720" height="960" loading="lazy" style="object-position: 60% 20%" /></figure><div class="pro-txt"><h3>Nice Santos · Estética</h3><p>Criolipólise de placas, acupuntura auricular e ventosaterapia.</p><a class="pro-ig" href="https://www.instagram.com/nicesantossaudeebeleza/" target="_blank" rel="noopener">@nicesantossaudeebeleza</a></div></div>
         </div>
       </div>
     </section>
@@ -222,8 +219,8 @@
           <h2 id="como-t">Seu horário em três passos</h2>
         </div>
         <ol class="steps">
-          <li class="reveal"><span>1</span><h3>Chame no WhatsApp</h3><p>Diga qual serviço você quer. A mensagem já vai pronta.</p></li>
-          <li class="reveal"><span>2</span><h3>Escolha o horário</h3><p>Atendemos de terça a sábado, das 9h às 18h.</p></li>
+          <li class="reveal"><span>1</span><h3>Escolha o serviço</h3><p>Clique em “Agendar” e veja todos os serviços do salão.</p></li>
+          <li class="reveal"><span>2</span><h3>Escolha o horário</h3><p>Veja os horários livres de terça a sábado, das 9h às 18h, e confirme.</p></li>
           <li class="reveal"><span>3</span><h3>Venha se renovar</h3><p>No Cabula, ao lado do Shopping Master.</p></li>
         </ol>
       </div>
@@ -246,7 +243,8 @@
             <dd><a href="https://www.instagram.com/salao.belezarenovada1/" target="_blank" rel="noopener">@salao.belezarenovada1</a></dd>
           </dl>
           <div class="actions">
-            <a class="btn" data-wa="Olá! Vim pelo site e gostaria de agendar um horário." href="#">Agendar agora</a>
+            <a class="btn" data-agenda href="#">Agendar agora</a>
+            <a class="btn btn-ghost" data-wa="Olá! Vim pelo site e gostaria de agendar um horário." href="#">WhatsApp</a>
             <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Rua+Silveira+Martins+55+Cabula+Salvador+BA" target="_blank" rel="noopener">Como chegar</a>
           </div>
         </div>
