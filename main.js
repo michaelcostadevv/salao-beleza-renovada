@@ -1,15 +1,8 @@
 // Dados de contato: altere aqui se mudar o número
 const CONFIG = {
   whatsapp: "5571987239091",
-  agenda: "https://script.google.com/macros/s/AKfycbzXQR-TGnd9prymWKu1g-OXDPPyQTTMMiQnNBg0D84uoukDaBFH7lNEFIks2PrnjYdN/exec",
 };
 
-// Botões com data-agenda abrem o sistema de agendamento online
-document.querySelectorAll("[data-agenda]").forEach((el) => {
-  el.href = CONFIG.agenda;
-  el.target = "_blank";
-  el.rel = "noopener";
-});
 
 const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -69,5 +62,12 @@ let ticking = false;
 window.addEventListener("scroll", () => {
   if (!ticking) { requestAnimationFrame(() => { onScroll(); ticking = false; }); ticking = true; }
 }, { passive: true });
-window.addEventListener("resize", onScroll);
+// Esconde "Role para ver mais" quando todas as fotos já cabem na tela
+function checkHint() {
+  const hint = hs && hs.querySelector(".works-hint");
+  if (hint && track) hint.hidden = track.scrollWidth <= document.documentElement.clientWidth;
+}
+window.addEventListener("resize", () => { onScroll(); checkHint(); });
+window.addEventListener("load", checkHint);
 onScroll();
+checkHint();
